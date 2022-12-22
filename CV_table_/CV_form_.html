@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer a job</title>
+    <style>
+         body {
+            background-color: rgb(1, 1, 39);
+            color: #f3f3bc;
+        }
+    </style>
+</head>
+
+<body>
+    <head>
+        <hr>
+        <h1>Hire me</h1>
+        <hr>
+    </head>
+
+    <div>
+        <h3><em>Contact information</em></h3>
+    </div>
+
+    <section>
+        <table border="1" cellspacing="0" cellpadding="5" >
+            <tbody>
+                <tr>
+                    <td><em>Phone</em></td>
+                    <td><strong>+380930191772</strong></td>
+                </tr>
+
+                <tr>
+                    <td><em>Adress</em></td>
+                    <td><strong>Lviv, Ukraine</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <form action="/CV_table_/CVOstrovskyi+Table.html" method="get">
+        <fieldset>
+            <legend>Contact form</legend>
+
+           <label>
+            E-mail: <input 
+            type="text" 
+            required
+            name="e-mail" 
+            placeholder="Please, type your e-mail adress"/>
+        </label>
+    </br>
+    <label>
+            Description: 
+            <textarea 
+            name="description" 
+            rows="-10" 
+            cols="20" 
+            placeholder="Briefly tell me about your offer">
+            </textarea>
+        </label>
+    </br>
+        Work type: <select name="work_type">
+            <option value="work_in_the_office">Work in the office</option>
+            <option value="remote_work">Remote work</option>
+            <option value="one_time_project">One-time project</option>
+        </select>
+    </br>
+
+        <input type="submit" value="Hire me"/>
+    </fieldset>
+
+        </form>
+    </section>
+</body>
+</html>
