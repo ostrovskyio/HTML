@@ -41,19 +41,20 @@
     </section>
 
     <section>
-        <form action="/CV_table_/CVOstrovskyi+Table.html" method="get">
+        <form action="/CV_table_/CV_form_.html" method="post">
+        
         <fieldset>
             <legend>Contact form</legend>
 
            <label>
-            E-mail: <input 
-            type="text" 
+            E-mail adress: <input 
+            type="email" 
             required
             name="e-mail" 
             placeholder="Please, type your e-mail adress"/>
-        </label>
+           </label>
     </br>
-    <label>
+           <label>
             Description: 
             <textarea 
             name="description" 
@@ -61,7 +62,7 @@
             cols="20" 
             placeholder="Briefly tell me about your offer">
             </textarea>
-        </label>
+            </label>
     </br>
         Work type: <select name="work_type">
             <option value="work_in_the_office">Work in the office</option>
@@ -69,9 +70,8 @@
             <option value="one_time_project">One-time project</option>
         </select>
     </br>
-
         <input type="submit" value="Hire me"/>
-    </fieldset>
+        </fieldset>
 
         </form>
     </section>
