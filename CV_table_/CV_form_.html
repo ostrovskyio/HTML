@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <head>
+    <header>
         <hr>
         <h1>Hire me</h1>
         <hr>
-    </head>
+    </header>
 
     <div>
         <h3><em>Contact information</em></h3>
@@ -45,30 +45,28 @@
         
         <fieldset>
             <legend>Contact form</legend>
-
-           <label>
-            E-mail adress: <input 
-            type="email" 
-            required
-            name="e-mail" 
-            placeholder="Please, type your e-mail adress"/>
-           </label>
-    </br>
-           <label>
-            Description: 
-            <textarea 
-            name="description" 
-            rows="-10" 
-            cols="20" 
-            placeholder="Briefly tell me about your offer">
-            </textarea>
-            </label>
-    </br>
-        Work type: <select name="work_type">
-            <option value="work_in_the_office">Work in the office</option>
-            <option value="remote_work">Remote work</option>
-            <option value="one_time_project">One-time project</option>
-        </select>
+        <table>
+            <tbody>
+             <tr>
+              <td><label for="email">E-mail:</label></td>
+              <td><input type="email" required name="email" placeholder="Please, type your e-mail adress"/></td>
+             </tr>
+    <br/>
+             <tr>
+              <td><label for="description">Description:</label></td>
+              <td><textarea name="description" rows="5" cols="21" placeholder="Briefly tell me about your offer"></textarea></td>
+             </tr>
+            </tbody>
+    <br/>
+             <tr>
+              <td>Worktype:</td>
+              <td><select name="worktype">
+              <option value="work_in_the_office">Work in the office</option>
+              <option value="remote_work">Remote work</option>
+              <option value="one_time_project">One-time project</option>
+              </select></td>
+             </tr>
+        </table>
     </br>
         <input type="submit" value="Hire me"/>
         </fieldset>
