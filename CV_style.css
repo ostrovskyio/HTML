@@ -3,29 +3,45 @@ body {
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
+.head {
+    display: inline-block;
+}
 #name {
+    float: left;
     font-style: italic;
-    border-bottom: 
-    2px
+    border-bottom: 2px
     solid
     #333;
 }
 #photo {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-top: 17px;
+    margin-left: 850px;
     padding: 10px;
-    border:
-    2px
+    border: 2px
     solid
     #333;
 }
 #position {
+    float: left;
     font-weight: bold;
     border-bottom: 
     2px
     solid
     #333;
 }
+.main {
+    display: grid;
+}
 .h3 {
     font-style: italic;
+}
+.table {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .title {
     text-transform: uppercase;
