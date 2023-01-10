@@ -38,6 +38,7 @@
                 </tr>
             </tbody>
         </table>
+    
     </section>
 
     <section>
@@ -49,18 +50,18 @@
             <tbody>
              <tr>
               <td><label for="email">E-mail:</label></td>
-              <td><input type="email" required name="email" placeholder="Please, type your e-mail adress"/></td>
+              <td><input type="email" required id="email" name="email" placeholder="Please, type your e-mail adress"/></td>
              </tr>
     <br/>
              <tr>
               <td><label for="description">Description:</label></td>
-              <td><textarea name="description" rows="5" cols="21" placeholder="Briefly tell me about your offer"></textarea></td>
+              <td><textarea  id="description" name="description" rows="5" cols="21" placeholder="Briefly tell me about your offer"></textarea></td>
              </tr>
             </tbody>
     <br/>
              <tr>
-              <td>Worktype:</td>
-              <td><select name="worktype">
+              <td><label for="worktype">Worktype</label></td>
+              <td><select id="worktype" name="worktype">
               <option value="work_in_the_office">Work in the office</option>
               <option value="remote_work">Remote work</option>
               <option value="one_time_project">One-time project</option>
