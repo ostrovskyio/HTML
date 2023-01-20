@@ -11,7 +11,8 @@ body {
     display: block;;
     float: left;
     width: 25%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     padding-top: 30px;
     background-color: #86A3B4;
 }
@@ -31,73 +32,74 @@ body {
     width: 100%;
     height: 100%;
 }
-#position {
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-    color: black;
+ul {
+    list-style-type: none;
 }
+
 #hire{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
     padding-top: 10px;
 }
+.subtitle {
+    font-size: x-large;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.info1 {
+    display: block;
+    font-weight: bold;
+}
+
 .main {
     display: block;
     float: right;
-    width: 73%;
+    width: 72%;
     height: 100vh;
     padding: 10px;
     padding-top: 30px;
 }
 .h3 {
-    font-style: italic;
+    font-style: normal;
     font-size: x-large;
-    font-weight: bold;
-    color: black;
+    font-weight: 600;
+    color: #263036;
     border-bottom: 
-    3px
     solid
-    black;
+    3px
+    #1E1E1E;
     padding: 10px;
 }
-.table {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.title {
-    text-transform: uppercase;
+dt {
+    display: block;
+    float: left;
     font-weight: bold;
-    background-color: rgb(116, 190, 250);
 }
-.info{
-    background-color: rgb(151, 187, 187);
-}
+
 .link {
     color: #00f;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .link:visited {
     color: #005;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .link:hover {
     text-decoration: none;
 }
 
 .skills {
-    list-style-type: square;
-    border-bottom: 
-    2px
-    solid
-    #333;
+    display: flex;
+    justify-content: space-between;
+    list-style-type:circle;
 }
+#skills1 {
+    float: left;
+}
+#skills2 {
+    float: center;
+}   
 
-#footer {
-    background-color: white;
-    text-align: left;
-    padding: 10px;
-    
-}
