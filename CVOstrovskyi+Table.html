@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
 
     <title>CV Oleh Ostrovskyi</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="CV_style.css" rel="stylesheet"/>
 
 </head>
 <body>
         <header class="head">
-            <div class="div1"> 
-                <h1 id="name">Oleh Ostrovskyi</h1>
-                <h2 id="position"> Trainee JavaScript developer </h2>
-            </div>
-            <div>
-                <img id="photo" src="CV_photo.jpg" alt="Oleh Ostrovsky's CV" width="300">
-            </div>
+                <div class="name">Oleh<div id="surname">Ostrovskyi</div></div>
+                <div><img id="photo" src="CV_photo.jpg" alt="Oleh Ostrovsky's CV" width="300"></div>
+                <div id="hire"><a href="CV_form_.html" class="link" target="_blank"> HIRE ME </a></div>
+                
         </header> 
-        <h1><a href="CV_form_.html" class="link" target="_blank"> HIRE ME </a></h1>
         
  <main class="main">
-    <h3 class="h3">Study experience</h3>
+    <div class="h3">Study experience</div>
     <section>
         <table border="1" cellspacing="0" cellpadding="5" class="table">
             <thead>
@@ -64,7 +62,7 @@
     </section>
    
     <section>
-        <h3 class="h3">Professional skills:</h3>
+        <div class="h3">Professional skills:</div>
         <ul class="skills">
             <li>Know how to use GitHub</li>
             <li>HTML</li>
@@ -75,7 +73,7 @@
     </section>
     
     <section>
-        <h3 class="h3">Achievments</h3>
+        <div class="h3">Achievments</div>
         <ol class="achievments">
             <li>Made my first JavaScript Developer CV using HTML</li>
             <li>...Loading...</li>
@@ -85,10 +83,7 @@
         </ol>
     </section>
  </main>
- 
- <footer>
-    <h5>CV<sup>©</sup>made by Oleh Ostrovskyi 2022</h5>
- </footer>
-    </div>  
+     </div> 
+     
 </body>
 </html>
