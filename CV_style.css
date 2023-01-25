@@ -102,8 +102,6 @@ dt {
 .skills {
     display: flex;
     justify-content: space-between;
-    list-style-type:circle;
-    list-style-position: inside;
 }
 #skills1 {
     float: left;
@@ -112,9 +110,9 @@ dt {
     float: center;
 }   
 ul {
-    list-style-type: circle;
+    list-style-type: disc;
     padding: 0px;
-
+    list-style-position: inside;
 }
 ol {
     padding: 0px;
