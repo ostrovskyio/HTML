@@ -4,9 +4,7 @@ body {
     margin: 0px;
     font-family: 'Inter', sans-serif;
 }
-.div1 {
-    float: left;
-}
+
 .head {
     display: block;;
     float: left;
@@ -21,6 +19,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     padding-left: 20px;
+    padding-bottom: 15px;
     color: white;
 }
 #surname{
@@ -32,24 +31,44 @@ body {
     width: 100%;
     height: 100%;
 }
-ul {
-    list-style-type: none;
-}
-
 #hire{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
     padding-top: 10px;
+    padding-bottom: 15px;
+}
+.link {
+    color: #00f;
+    text-decoration: none;
+}
+.link:visited {
+    color: #005;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: none;
+}
+.contact {
+    padding-left: 20px;
+    padding-right: 30px;
 }
 .subtitle {
     font-size: x-large;
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 10px;
-
+    list-style-type: none;
 }
-.info1 {
+#address {
+    padding-top: 10px;
+}
+.languages {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.info {
     display: block;
     font-weight: bold;
 }
@@ -62,39 +81,29 @@ ul {
     padding: 10px;
     padding-top: 30px;
 }
-.h3 {
+hr {
+    height: 3px;
+    border-width: 0px;
+    background-color: #1E1E1E;
+    
+}
+.title {
     font-style: normal;
     font-size: x-large;
     font-weight: 600;
     color: #263036;
-    border-bottom: 
-    solid
-    3px
-    #1E1E1E;
-    padding: 10px;
+    margin: 0px;
 }
 dt {
     display: block;
     float: left;
     font-weight: bold;
 }
-
-.link {
-    color: #00f;
-    text-decoration: none;
-}
-.link:visited {
-    color: #005;
-    text-decoration: none;
-}
-.link:hover {
-    text-decoration: none;
-}
-
 .skills {
     display: flex;
     justify-content: space-between;
     list-style-type:circle;
+    list-style-position: inside;
 }
 #skills1 {
     float: left;
@@ -102,4 +111,19 @@ dt {
 #skills2 {
     float: center;
 }   
+ul {
+    list-style-type: circle;
+    padding: 0px;
+
+}
+ol {
+    padding: 0px;
+    list-style-position:inside;
+}
+li {
+    font-weight: bold;
+}
+.nostyle {
+    list-style-type: none;
+}
 
