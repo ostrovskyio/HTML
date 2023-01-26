@@ -5,74 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offer a job</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="Form_style.css" rel="stylesheet">
-    <style>
-         body {
-            background-color: rgb(1, 1, 39);
-            color: #f3f3bc;
-        }
-    </style>
+    
 </head>
 
 <body>
+    <main class="main">
+
     <header>
-        <hr>
-        <h1>Hire me</h1>
-        <hr>
+        <h1>HIRE ME</h1>
     </header>
 
     <div>
-        <h3><em>Contact information</em></h3>
+        <h3>Contact information</h3>
     </div>
 
     <section>
-        <table border="1" cellspacing="0" cellpadding="5" >
+        <table class="info">
             <tbody>
                 <tr>
-                    <td><em>Phone</em></td>
-                    <td><strong>+380930191772</strong></td>
+                    <td class="info"><strong>Phone:</strong></td>
+                    <td class="info">+380930191772</td>
                 </tr>
 
                 <tr>
-                    <td><em>Adress</em></td>
-                    <td><strong>Lviv, Ukraine</strong></td>
+                    <td class="info"><strong>Address:</strong></td>
+                    <td class="info">Lviv, Ukraine</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section>
+    <section class="form">
         <form action="/CV_table_/CV_form_.html" method="post">
-        
+            <p>Contact form</p>
+            
         <fieldset>
-            <legend>Contact form</legend>
-        <table>
-            <tbody>
-             <tr>
-              <td><label for="email">E-mail:</label></td>
-              <td><input type="email" required name="email" placeholder="Please, type your e-mail adress"/></td>
-             </tr>
-    <br/>
-             <tr>
-              <td><label for="description">Description:</label></td>
-              <td><textarea name="description" rows="5" cols="21" placeholder="Briefly tell me about your offer"></textarea></td>
-             </tr>
-            </tbody>
-    <br/>
-             <tr>
-              <td>Worktype:</td>
-              <td><select name="worktype">
+        <div class="formtype">
+            <div class="required">
+              <label for="email" class="title">E-mail<h id="star">&nbsp;*</h></label>
+    </br>
+              <input type="email" 
+              required id="email" 
+              class="email" 
+              name="email" 
+              placeholder="Please, type your e-mail adress"/>
+              <p class="error">Enter correct e-mail</p>
+    </br>
+            </div>
+              <label for="description" class="title">Description</label>
+    </br>
+              <textarea  id="description" 
+              name="description" 
+              rows="5" cols="21" 
+              placeholder="Briefly tell me about your offer"></textarea>     
+    </br>
+              <label for="worktype" class="title">Worktype</label>
+    </br>
+              <select id="worktype" name="worktype">
+    </br>
+              <option value="select_worktype:">Select worktype:</option>
               <option value="work_in_the_office">Work in the office</option>
               <option value="remote_work">Remote work</option>
               <option value="one_time_project">One-time project</option>
-              </select></td>
-             </tr>
-        </table>
+              </select>
+             
+        </div>
     </br>
-        <input type="submit" value="Hire me"/>
         </fieldset>
+        <input id="submit" type="submit" value="Hire me"/>
 
         </form>
     </section>
+    </main>
 </body>
 </html>
