@@ -3,11 +3,14 @@ body {
 }
 
 .main {
+    position: relative;
+    top: calc(50% - 346px);
+    left: calc(50% - 205px);
     background-color: #fff;
     display: block;
+    justify-content: center;
     text-align: center;
     max-width: 1024px;
-    margin: auto;
     font-family: 'Inter', sans-serif;
     padding-top: 0px;
     padding-left: 50px;
@@ -30,21 +33,16 @@ body {
     lightgray;
     border-collapse: collapse;
     padding: 5px;
-    margin: auto;
 }
 
 p {
     font-weight: bold;
     font-size: larger;
-    margin: auto;
     padding: 10px;
 }
 .form {
     display: flex;
     justify-content: center;
-}
-.formtype {
-    margin: auto;
 }
 form {
     width: 300px;
