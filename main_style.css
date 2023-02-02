@@ -146,4 +146,24 @@ li {
 .nostyle {
     list-style-type: none;
 }
-
+@media screen and (max-width: 650px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "head"
+        "main";
+    }
+    .head {
+        display: grid;
+        position: relative;
+        width: auto;
+        grid-area: head;
+    }
+    .main {
+        display: grid;
+        width: auto;
+        grid-area: main;
+    }
+}
