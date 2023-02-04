@@ -45,6 +45,7 @@ body {
     background-color: var(--color-background-head);
     /* overflow: scroll; */
     box-shadow: 3px 5px 5px;
+    z-index: 1;
 }
 .name {
     float: left;
@@ -67,6 +68,7 @@ body {
     translate: 10%;
     overflow: visible;
     box-shadow: 5px 5px 5px;
+    cursor: pointer;
 }
 #hire{
     text-align: center;
