@@ -68,7 +68,6 @@ body {
     translate: 10%;
     overflow: visible;
     box-shadow: 5px 5px 5px;
-    cursor: pointer;
 }
 #hire{
     text-align: center;
@@ -129,7 +128,6 @@ hr {
 .exp {
     opacity: .7;
 }
-
 .exp:hover {
     opacity: 1;
 }
