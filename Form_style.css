@@ -57,7 +57,7 @@ fieldset {
     font-weight: bolder;
     padding-bottom: 10px;
 }
-#star {
+.star {
     color: #ED0131;
 }
 label {
@@ -77,7 +77,7 @@ button {
   border-radius: 4px;
   background-color: #F8FAFC;
 }
-input:required:valid{
+input:required:valid {
     outline-color: #0E6245;
 }
 input:required:invalid{
@@ -85,16 +85,20 @@ input:required:invalid{
 }
 input:invalid + .error{
     display: block;
-}
-.error {
-    display: none;
     color: #ED0131;
+}
+input:valid + .error + .success {
+    display: block;
+    color: #0E6245;
+}
+.error,
+.success  {
+    display: none;
     font-size: small;
     font-weight: light;
     text-align: left;
     padding: 0;
 }
-
 #submit {
     margin-top: 15px;
     padding: 4px 16px;
