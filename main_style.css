@@ -183,13 +183,11 @@ li {
         position: relative;
         width: auto;
         grid-area: head;
-        animation: none;
     }
     .main {
         display: grid;
         width: auto;
         grid-area: main;
-        animation: none;
     }
     #photo {
         transition: none;
