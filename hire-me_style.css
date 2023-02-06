@@ -58,7 +58,7 @@ fieldset {
     padding-bottom: 10px;
 }
 
-#star {
+.star {
     color: #ED0131;
 }
 
@@ -84,18 +84,20 @@ button {
 input:required:valid {
     outline-color: #0E6245;
 }
-
-input:required:invalid {
+input:required:invalid{
     outline-color: #ED0131;
 }
-
-input:invalid+.error {
+input:invalid + .error{
     display: block;
-}
-
-.error {
-    display: none;
     color: #ED0131;
+}
+input:valid + .error + .success {
+    display: block;
+    color: #0E6245;
+}
+.error,
+.success  {
+    display: none;
     font-size: small;
     font-weight: light;
     text-align: left;
