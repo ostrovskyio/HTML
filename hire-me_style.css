@@ -3,9 +3,10 @@ body {
 }
 
 .main {
-    position: fixed;
-    top: calc(50% - 360px);
-    left: calc(50% - 210px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     display: block;
     justify-content: center;
