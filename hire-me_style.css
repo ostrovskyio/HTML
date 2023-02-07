@@ -3,9 +3,9 @@ body {
 }
 
 .main {
-    position: relative;
-    top: calc(50% - 346px);
-    left: calc(50% - 205px);
+    position: fixed;
+    top: calc(50% - 360px);
+    left: calc(50% - 210px);
     background-color: #fff;
     display: block;
     justify-content: center;
