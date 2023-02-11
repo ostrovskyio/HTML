@@ -1,11 +1,171 @@
-body {
+.my-theme {
+  background-color: #77ACA2;
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: 0 0 0 0;
+}
+.my-theme .head {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  min-height: 100vh;
+  position: fixed;
+  color: black;
+  background-color: #F4E9CD;
+  /* overflow: scroll; */
+  box-shadow: 3px 5px 5px;
+  z-index: 1;
+  animation-name: head;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+.my-theme .name {
+  float: left;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 20px 0 15px 20px;
+  color: black;
+}
+.my-theme #surname {
+  color: #1C2E8C;
+}
+.my-theme #photo {
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s linear;
+}
+.my-theme #photo:hover {
+  transform: scale(1.2);
+  transition: 1s linear;
+  translate: 10%;
+  overflow: visible;
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
+}
+.my-theme #hire {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.my-theme .link {
+  color: #00f;
+  text-decoration: none;
+}
+.my-theme .link:visited {
+  color: #005;
+}
+.my-theme .contact {
+  padding: 15px 30px 0 20px;
+}
+.my-theme .subtitle {
+  font-size: x-large;
+  font-weight: 600;
+  padding: 20px 0 10px 0;
+  list-style-type: none;
+}
+.my-theme #address {
+  padding: 0 0 10px 0;
+}
+.my-theme .languages {
+  padding: 15px 30px 0 20px;
+}
+.my-theme .info {
+  display: block;
+  font-weight: 600;
+}
+.my-theme .main {
+  display: block;
+  float: right;
+  width: 72%;
+  height: 100vh;
+  padding: 30px 10px 10px 10px;
+  animation-name: main;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.my-theme hr {
+  height: 3px;
+  border-width: 0px;
+  background-color: black;
+}
+.my-theme .title {
+  border-bottom: 3px dashed black;
+  font-size: x-large;
+  font-weight: 600;
+  color: black;
+  padding: 0 0 5px 0;
+  margin: 0 0 0 0;
+}
+.my-theme .exp {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.my-theme .exp:hover {
+  opacity: 1;
+}
+.my-theme dt {
+  display: block;
+  float: left;
+  font-weight: 600;
+}
+.my-theme .skills {
+  display: flex;
+  justify-content: space-between;
+}
+.my-theme #skills1 {
+  float: left;
+}
+.my-theme #skills2 {
+  float: center;
+}
+.my-theme ul {
+  list-style-type: disc;
+  padding: 0 0 0 0;
+  list-style-position: inside;
+}
+.my-theme ol {
+  padding: 0 0 0 0;
+  list-style-position: inside;
+}
+.my-theme li {
+  font-weight: 600;
+}
+.my-theme .nostyle {
+  list-style-type: none;
+}
+@keyframes head {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes main {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-theme {
   background-color: white;
   font-family: "Inter", sans-serif;
   color: #333;
   margin: 0 0 0 0;
 }
-
-.head {
+.main-theme .head {
   display: block;
   float: left;
   width: 25%;
@@ -17,28 +177,28 @@ body {
   /* overflow: scroll; */
   box-shadow: 3px 5px 5px;
   z-index: 1;
-  animation: head 5s forwards;
+  animation-name: head;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
-
-.name {
+.main-theme .name {
   float: left;
   font-size: 40px;
   font-weight: 600;
   padding: 20px 0 15px 20px;
   color: white;
 }
-
-#surname {
+.main-theme #surname {
   color: #1C2E8C;
 }
-
-#photo {
+.main-theme #photo {
   padding: 0 0 0 0;
   width: 100%;
   height: 100%;
   transition: 1s linear;
 }
-#photo :hover {
+.main-theme #photo:hover {
   transform: scale(1.2);
   transition: 1s linear;
   translate: 10%;
@@ -46,113 +206,116 @@ body {
   box-shadow: 5px 5px 10px;
   cursor: pointer;
 }
-
-#hire {
+.main-theme #hire {
   text-align: center;
   font-size: xx-large;
   font-weight: 600;
 }
-
-.link {
+.main-theme .link {
   color: #00f;
   text-decoration: none;
 }
-.link :visited {
+.main-theme .link:visited {
   color: #005;
 }
-
-.contact {
+.main-theme .contact {
   padding: 15px 30px 0 20px;
 }
-
-.subtitle {
+.main-theme .subtitle {
   font-size: x-large;
   font-weight: 600;
   padding: 20px 0 10px 0;
   list-style-type: none;
 }
-
-#address {
+.main-theme #address {
   padding: 0 0 10px 0;
 }
-
-.languages {
+.main-theme .languages {
   padding: 15px 30px 0 20px;
 }
-
-.info {
+.main-theme .info {
   display: block;
   font-weight: 600;
 }
-
-.main {
+.main-theme .main {
   display: block;
   float: right;
   width: 72%;
   height: 100vh;
   padding: 30px 10px 10px 10px;
-  animation: main 5s forwards;
+  animation-name: main;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   animation-delay: 0.5s;
-  opacity: 1;
+  opacity: 0;
 }
-
-hr {
+.main-theme hr {
   height: 3px;
   border-width: 0px;
   background-color: #1E1E1E;
 }
-
-.title {
-  border-bottom: 3px solid #263036;
+.main-theme .title {
+  border-bottom: 3px solid #010202;
   font-size: x-large;
   font-weight: 600;
-  color: #263036;
+  color: #010202;
   padding: 0 0 5px 0;
   margin: 0 0 0 0;
 }
-
-.exp {
+.main-theme .exp {
   opacity: 0.7;
   transition: 0.5s;
 }
-.exp :hover {
+.main-theme .exp:hover {
   opacity: 1;
 }
-
-dt {
+.main-theme dt {
   display: block;
   float: left;
   font-weight: 600;
 }
-
-.skills {
+.main-theme .skills {
   display: flex;
   justify-content: space-between;
 }
-
-#skills1 {
+.main-theme #skills1 {
   float: left;
 }
-
-#skills2 {
+.main-theme #skills2 {
   float: center;
 }
-
-ul {
+.main-theme ul {
   list-style-type: disc;
   padding: 0 0 0 0;
   list-style-position: inside;
 }
-
-ol {
+.main-theme ol {
   padding: 0 0 0 0;
   list-style-position: inside;
 }
-
-li {
+.main-theme li {
   font-weight: 600;
 }
-
-.nostyle {
+.main-theme .nostyle {
   list-style-type: none;
+}
+@keyframes head {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes main {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main_theme.css.map */

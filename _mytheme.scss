@@ -1,16 +1,14 @@
-@import './mytheme';
-
-.main-theme {
-    $color-background-body: white;
-    $color-background-head: #86A3B4;
-    $color-text-head:#333;
-    $color-text-main: #333;
-    $color-text-title: #010202;
-    $color-text-name: white;
+.my-theme {
+    $color-background-body: #77ACA2;
+    $color-background-head: #F4E9CD;
+    $color-text-head: black;
+    $color-text-main: white;
+    $color-text-title: black;
+    $color-text-name: black;
     $color-text-surname: #1C2E8C;
     $color-text-link: #00f;
     $color-text-link-visited:#005;
-    $color-hr: #1E1E1E;
+    $color-hr: black;
 
     $padding-auto: 0 0 0 0;
     $padding-main: 30px 10px 10px 10px;
@@ -27,7 +25,7 @@
     $font-size-hire: xx-large;
     $font-size-title: x-large;
     $font-weight-bold: 600;
-    $border-bottom: 3px solid $color-text-title;
+    $border-bottom: 3px dashed $color-text-title;
 
 // ./body/.
     background-color: $color-background-body;
