@@ -24,6 +24,15 @@ body {
     animation: form 3s forwards;
 }
 
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
 .info {
     text-align: left;
     width: 300px;
