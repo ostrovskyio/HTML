@@ -1,0 +1,134 @@
+body {
+    background-color: #86A3B4;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    max-width: 1024px;
+    font-family: 'Inter', sans-serif;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    border: 
+    5px
+    lightgray
+    outset;
+    width: fit-content;
+    animation: form 3s forwards;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.info {
+    text-align: left;
+    width: 300px;
+    letter-spacing: 3px;
+    border: 
+    2px
+    dashed
+    lightgray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 300px;
+}
+fieldset {
+    border-style: dashed;
+    border-color: lightgray;
+}
+.title {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.star {
+    color: #ED0131;
+}
+label {
+    float: left;
+    padding-top: 10px;
+}
+input,
+textarea,
+select,
+button {
+  font-family: 'Inter', sans-serif;
+  outline-color: #0048D9;
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #F8FAFC;
+}
+input:required:valid {
+    outline-color: #0E6245;
+}
+input:required:invalid{
+    outline-color: #ED0131;
+}
+input:invalid + .error{
+    display: block;
+    color: #ED0131;
+}
+input:valid + .error + .success {
+    display: block;
+    color: #0E6245;
+}
+.error,
+.success  {
+    display: none;
+    font-size: small;
+    font-weight: light;
+    text-align: left;
+    padding: 0;
+}
+#submit {
+    margin-top: 15px;
+    padding: 4px 16px;
+    background: #0048D9;
+    border-radius: 6px;
+    color: white;
+    font-size: x-large;
+    border: 0;  
+}
+#submit:hover {
+    background: rgb(2, 2, 94);
+}
+#submit:disabled {
+    background: rgb(169, 169, 247);
+}
+@keyframes form {
+    from {
+        scale: 2;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer a job</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="hire-me_style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <main class="main">
+
+    <header>
+        <h1>HIRE ME</h1>
+    </header>
+
+    <div>
+        <h3>Contact information</h3>
+    </div>
+
+    <section>
+        <table class="info">
+            <tbody>
+                <tr>
+                    <td class="info"><strong>Phone:</strong></td>
+                    <td class="info">+380930191772</td>
+                </tr>
+
+                <tr>
+                    <td class="info"><strong>Address:</strong></td>
+                    <td class="info">Lviv, Ukraine</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="form">
+        <div class="w-full max-w-xs">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/CV_table_/CV_form_.html" method="post">
+              <p class="font-bold text-gray-700 text-xl text-center">Contact form</p>
+              
+          <fieldset>
+          <div class="formtype">
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">E-mail<h class="text-red-500">&nbsp;*</h></label>
+      
+                <input type="email" 
+                required id="email" 
+                class="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                name="email" 
+                placeholder="Please, type your e-mail adress"/>
+                <p class="error">Enter correct e-mail</p>
+                <p class="success">Successfully</p>
+      
+              </div>
+              <div class="mb-4">
+                <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description</label>
+      
+                <textarea  id="description" 
+                name="description" 
+                rows="5" cols="33" 
+                placeholder="Briefly tell me about your offer"></textarea>
+              </div>    
+      
+                <label for="worktype" class="block text-gray-700 text-sm font-bold mb-2">Worktype</label>
+      
+                  <div class="inline-block relative w-64">
+                      <select id="worktype" name="worktype" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option value="work_in_the_office">Work in the office</option>
+                          <option value="remote_work">Remote work</option>
+                          <option value="one_time_project">One-time project</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+          </div>
+      </br>
+          </fieldset>
+          <div class="flex content-center">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+              Hire me
+          </button>
+          </div>
+          </form>
+          </div>
+    </section>
+    </main>
+</body>
+</html>
