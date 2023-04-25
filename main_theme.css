@@ -37,10 +37,16 @@
   height: 100%;
   transition: 1s linear;
 }
+.my-theme #project {
+  padding: 15px 30px 0 20px;
+  cursor: pointer;
+  color: #005;
+}
 .my-theme #hire {
   text-align: center;
   font-size: xx-large;
   font-weight: 600;
+  padding-top: 20px;
 }
 .my-theme .link {
   color: #00f;
